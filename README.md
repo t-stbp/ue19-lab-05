@@ -10,7 +10,7 @@ Vous devez avoir Docker d'installé sur votre machine.
 
 1.  **Clonez ce dépôt :**
     ```bash
-    git clone [https://github.com/t-stbp/ue19-lab-05.git](https://github.com/VOTRE_NOM/ue19-lab-05.git)
+    git clone [https://github.com/t-stbp/ue19-lab-05.git](https://github.com/tom-stbp/ue19-lab-05.git)
     cd ue19-lab-05
     ```
 
