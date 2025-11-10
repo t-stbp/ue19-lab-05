@@ -4,7 +4,7 @@ import sys
 
 def get_activity():
     """
-    Interroge la NOUVELLE API BoredAPI pour une activité aléatoire
+    Interroge l' API BoredAPI pour une activité aléatoire
     et l'affiche.
     """
     try:
