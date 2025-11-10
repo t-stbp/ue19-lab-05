@@ -33,7 +33,7 @@ jobs:
       # On la "tag" (étiquette) avec l'adresse du registre
       - name: 3. Construire l'image Docker
         run: docker build -t ghcr.io/${{ github.repository }}:latest .
-        # Note: ${{ github.repository }} sera remplacé par "VotreNom/ue19-lab-05"
+        # Note: ${{ github.repository }} sera remplacé par "t-stbp/ue19-lab-05"
 
       # Étape 4 : Scan de vulnérabilité avec Trivy (demandé par Q4)
       # Scanne l'image que nous venons de construire AVANT de la publier
