@@ -2,14 +2,14 @@ import requests
 import sys
 
 
-def get_quote():
+def get_activity():
     """
-    Interroge l'API Quotable pour une citation aléatoire
+    Interroge la NOUVELLE API BoredAPI pour une activité aléatoire
     et l'affiche.
     """
     try:
-        # L'endpoint pour une citation aléatoire
-        url = "https://api.quotable.io/random"
+        # La nouvelle URL qui fonctionne :
+        url = "https://bored-api.appbrewery.com/random"
         response = requests.get(url)
 
         # Lève une exception si le statut HTTP n'est pas 200 (OK)
@@ -17,11 +17,11 @@ def get_quote():
 
         data = response.json()
 
-        if data and "content" in data and "author" in data:
-            print("\n--- Citation du jour ---")
-            print(f"\"{data['content']}\"")
-            print(f"      - {data['author']}")
-            print("--------------------------\n")
+        # La structure du JSON est la même, "activity" est la clé
+        if data and "activity" in data:
+            print("\n--- Idée d'activité ---")
+            print(f"{data['activity']}.")
+            print("-------------------------\n")
         else:
             print("Erreur : Données de l'API mal formatées.", file=sys.stderr)
 
@@ -30,4 +30,4 @@ def get_quote():
 
 
 if __name__ == "__main__":
-    get_quote()
+    get_activity()

@@ -1,6 +1,6 @@
-# ue19-lab-05 : Générateur de Citations
+# ue19-lab-05 : Générateur d'Activités
 
-Cette application Python interroge l'API publique [Quotable](https://api.quotable.io/) pour récupérer une citation aléatoire et l'afficher dans la console.
+Cette application Python interroge l'API publique "Bored API" (version App Brewery) pour récupérer une activité aléatoire et l'afficher dans la console.
 
 Le projet est conçu pour être exécuté dans un conteneur Docker.
 
@@ -15,15 +15,15 @@ Vous devez avoir Docker d'installé sur votre machine.
     ```
 
 2.  **Construisez l'image Docker :**
-    Cette commande lit le `Dockerfile` et crée une image locale nommée `app-citation`.
+    Cette commande lit le `Dockerfile` et crée une image locale nommée `app-activite`.
     ```bash
-    docker build -t app-citation .
+    docker build -t app-activite .
     ```
 
 3.  **Lancez le conteneur :**
-    Cette commande exécute l'image `app-citation`. L'option `--rm` nettoie et supprime le conteneur après son exécution.
+    Cette commande exécute l'image `app-activite`. L'option `--rm` nettoie et supprime le conteneur après son exécution.
     ```bash
-    docker run --rm app-citation
+    docker run --rm app-activite
     ```
 
-Une citation devrait alors s'afficher dans votre terminal.
+Une idée d'activité devrait alors s'afficher dans votre terminal.
